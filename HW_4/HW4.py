@@ -5,25 +5,25 @@
 # множества. m — кол-во элементов второго множества.
 # Затем пользователь вводит сами элементы множеств.
 
-# n = int(input("Введите количество элементов первого множества: "))
-# a = set()
-# for i in range(n):
-#     a.add(int(input("Введите элемент первого множества: ")))
+n = int(input("Введите количество элементов первого множества: "))
+a = set()
+for i in range(n):
+    a.add(int(input("Введите элемент первого множества: ")))
 
-# m = int(input("Введите количество элементов второго множества: "))
-# b = set()
-# for i in range(m):
-#     b.add(int(input("Введите элемент второго множества: ")))
+m = int(input("Введите количество элементов второго множества: "))
+b = set()
+for i in range(m):
+    b.add(int(input("Введите элемент второго множества: ")))
 
-# inter = list(b.intersection(a))
+inter = list(b.intersection(a))
 
-# for j in range(len(inter) - 1):
-#     for i in range(len(inter) - 1):
-#         if inter[i] > inter[i + 1]:
-#             temp = inter[i]
-#             inter[i] = inter[i + 1]
-#             inter[i + 1] = temp
-# print(inter)
+for j in range(len(inter) - 1):
+    for i in range(len(inter) - 1):
+        if inter[i] > inter[i + 1]:
+            temp = inter[i]
+            inter[i] = inter[i + 1]
+            inter[i + 1] = temp
+print(inter)
 
 # Задача 24: В фермерском хозяйстве в Карелии выращивают чернику.
 # Она растёт на круглой грядке, причём кусты высажены только по
